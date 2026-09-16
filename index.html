@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunatyam Studios — dance-drama from India's epics, for the screen</title>
+<meta name="description" content="A studio in planning, building dance-drama from India's epics for the screen: Kosha, a library of cleared playback tracks; a route for creators; and rights, credit and payment settled in writing before anything is recorded.">
+<link rel="canonical" href="https://sunatyam.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sunatyam.com/">
+<meta property="og:title" content="Sunatyam Studios — dance-drama from India's epics, for the screen">
+<meta property="og:description" content="A studio in planning. We are building Kosha, a library of cleared playback tracks, a route for creators, and terms that settle rights, credit and payment before anything is recorded.">
+<meta property="og:image" content="https://sunatyam.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Sunatyam Studios">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sunatyam Studios — dance-drama from India's epics, for the screen">
+<meta name="twitter:description" content="A studio in planning. Kosha, a library of cleared playback tracks. A route for creators. Terms settled in writing before anything is recorded.">
+<meta name="twitter:image" content="https://sunatyam.com/og-image.png">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar:wght@600;700&family=Karla:wght@300;400;500;700&display=swap">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --nishi:#0B1220;
+  --pradip:#E3A94B;
+  --shola:#F4EFE6;
+  --dhusar:#93A2B8;
+  --fg:#CBD3E0;
+  --line:rgba(227,169,75,.34);
+  --line-soft:rgba(244,239,230,.14);
+  --dawn:0;
+  --display:'Eczar',Georgia,serif;
+  --ui:'Karla','Helvetica Neue',Arial,sans-serif;
+  --maxw:1180px;
+  --gutter:clamp(1.25rem,5vw,5.5rem);
+  --sp:clamp(4.25rem,9.5vw,8.5rem);
+  --ease:cubic-bezier(.2,.7,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--nishi);color:var(--fg);
+  font-family:var(--ui);font-weight:300;
+  font-size:clamp(1rem,.96rem+.22vw,1.115rem);line-height:1.72;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+
+/* ---------- the room lightens as you read it ---------- */
+.dawn{
+  position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:var(--dawn);
+  background:
+    radial-gradient(130% 82% at 50% 100%, rgba(227,169,75,.15) 0%, rgba(227,169,75,.055) 34%, transparent 70%),
+    linear-gradient(0deg, rgba(120,70,40,.22) 0%, rgba(38,42,76,.10) 46%, transparent 82%);
+}
+.grain{
+  position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.26;mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E");
+}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--display);color:var(--shola);margin:0;font-weight:700;letter-spacing:-.012em}
+h1{font-size:clamp(2.7rem,1.3rem + 7.6vw,6.4rem);line-height:1.02}
+h2{font-size:clamp(1.9rem,1.05rem + 3.1vw,3.2rem);line-height:1.08;max-width:19ch}
+h3{font-size:clamp(1.12rem,.92rem + .72vw,1.48rem);line-height:1.22;font-weight:600;letter-spacing:0}
+p{margin:0 0 1.25rem}
+p:last-child{margin-bottom:0}
+a{color:var(--shola)}
+strong{font-weight:500;color:var(--shola)}
+em{font-style:italic}
+.dev{font-family:var(--display);font-weight:600;color:var(--pradip);font-style:normal}
+.eyebrow{
+  font-size:.715rem;font-weight:500;letter-spacing:.185em;text-transform:uppercase;
+  color:var(--dhusar);margin:0 0 1.1rem;
+}
+.lede{font-size:clamp(1.08rem,1rem + .55vw,1.4rem);line-height:1.6;color:var(--shola);font-weight:300;max-width:46ch}
+.kicker{font-family:var(--display);font-weight:600;color:var(--pradip);font-size:clamp(1.05rem,.95rem + .55vw,1.35rem);line-height:1.4;max-width:40ch}
+.prose{max-width:62ch}
+.prose-wide{max-width:70ch}
+
+/* ---------- tala rule ---------- */
+.rule{position:relative;height:1px;background:var(--line-soft);margin-bottom:1.45rem}
+.rule::after{content:"";position:absolute;left:0;top:0;width:100%;height:6px;
+  background:repeating-linear-gradient(90deg,var(--line-soft) 0 1px,transparent 1px 36px)}
+.rule::before{content:"";position:absolute;left:0;top:-5px;width:1px;height:15px;
+  background:var(--pradip);z-index:1}
+
+/* ---------- layout ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+section{padding:var(--sp) 0}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:2.4rem 4.5rem;align-items:start}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.4rem 3rem}
+.cols2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 2.5rem}
+.mt{margin-top:2.6rem}
+.mt-s{margin-top:1.6rem}
+
+/* ---------- skip link + focus ---------- */
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--pradip);color:#141824;
+  padding:.8rem 1.2rem;font-weight:500;text-decoration:none}
+.skip:focus{left:var(--gutter);top:.6rem}
+a:focus-visible,button:focus-visible,.skip:focus{outline:2px solid var(--pradip);outline-offset:4px}
+
+/* ---------- header ---------- */
+.site-head{
+  position:sticky;top:0;z-index:20;
+  background:rgba(11,18,32,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line-soft);
+}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  max-width:var(--maxw);margin:0 auto;padding:1.05rem var(--gutter)}
+.mark{font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:.13em;
+  color:var(--shola);text-decoration:none}
+.mark span{color:var(--pradip)}
+.nav{display:flex;gap:1.9rem}
+.nav a{font-size:.83rem;font-weight:400;letter-spacing:.03em;color:var(--dhusar);text-decoration:none;
+  transition:color .25s}
+.nav a:hover{color:var(--shola)}
+@media (max-width:900px){.nav{display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding-top:clamp(3.5rem,9vw,7.5rem);padding-bottom:clamp(3.5rem,8vw,6.5rem)}
+.hero h1 .gold{color:var(--pradip)}
+.hero .lede{margin-top:2rem}
+.stage-note{
+  border-left:2px solid var(--pradip);padding:.2rem 0 .2rem 1.5rem;margin-top:2.8rem;
+  max-width:56ch;color:var(--fg);font-size:.98rem;line-height:1.7;
+}
+.cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.6rem}
+.btn{display:inline-flex;align-items:center;font-family:var(--ui);font-weight:500;font-size:.875rem;
+  letter-spacing:.025em;padding:.85rem 1.55rem;border-radius:2px;text-decoration:none;
+  border:1px solid transparent;transition:background .25s,color .25s,border-color .25s}
+.btn-solid{background:var(--pradip);color:#141824;border-color:var(--pradip)}
+.btn-solid:hover{background:#F0BA65;border-color:#F0BA65}
+.btn-ghost{color:var(--shola);border-color:var(--line)}
+.btn-ghost:hover{background:rgba(227,169,75,.08);border-color:var(--pradip)}
+
+/* ---------- definition rows ---------- */
+.dl{margin:0;border-top:1px solid var(--line-soft)}
+.dl>div{
+  display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:.45rem 2.6rem;
+  padding:1.45rem .75rem;border-bottom:1px solid var(--line-soft);
+  transition:background .3s var(--ease),padding-left .3s var(--ease);
+}
+.dl>div:hover{background:rgba(227,169,75,.05);padding-left:1.4rem}
+.dl dt{font-size:.695rem;font-weight:500;letter-spacing:.155em;text-transform:uppercase;
+  color:var(--pradip);line-height:1.5;padding-top:.32rem}
+.dl dd{margin:0;color:var(--fg)}
+.dl.terms dt{font-family:var(--display);font-weight:600;font-size:1.02rem;letter-spacing:0;
+  text-transform:none;color:var(--shola);line-height:1.35;padding-top:0}
+.dl.terms>div{grid-template-columns:minmax(0,16rem) minmax(0,1fr)}
+.dl.tight>div{grid-template-columns:7.6rem minmax(0,1fr);padding:.85rem .75rem}
+.dl.tight dd{color:var(--fg);font-size:.95rem}
+
+/* ---------- the route ---------- */
+.steps{list-style:none;margin:2.6rem 0 0;padding:0;border-top:1px solid var(--line-soft)}
+.steps>li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:.5rem 2.4rem;
+  padding:1.7rem .75rem;border-bottom:1px solid var(--line-soft);
+  transition:background .3s var(--ease),padding-left .3s var(--ease)}
+.steps>li:hover{background:rgba(227,169,75,.05);padding-left:1.4rem}
+.beat{font-family:var(--display);font-weight:600;font-size:1.55rem;color:var(--pradip);line-height:1}
+.sam{display:block;font-family:var(--ui);font-weight:500;font-size:.6rem;letter-spacing:.2em;
+  color:var(--dhusar);margin-top:.45rem}
+.steps h3{margin-bottom:.45rem}
+
+/* ---------- tabs ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2.6rem}
+.tab{font-family:var(--ui);font-weight:500;font-size:.775rem;letter-spacing:.115em;text-transform:uppercase;
+  padding:.78rem 1.3rem;background:transparent;color:var(--dhusar);border:1px solid var(--line-soft);
+  border-radius:2px;cursor:pointer;transition:color .25s,border-color .25s,background .25s}
+.tab:hover{color:var(--shola);border-color:var(--line)}
+.tab[aria-selected="true"]{background:var(--pradip);color:#141824;border-color:var(--pradip)}
+.panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:2rem 4rem;
+  margin-top:1.7rem;padding-top:2.1rem;border-top:1px solid var(--line-soft)}
+.panel h3{margin-bottom:.9rem}
+
+/* ---------- bordered panels ---------- */
+.box{border:1px solid var(--line-soft);padding:clamp(1.6rem,3vw,2.3rem)}
+.box h3{margin-bottom:.9rem}
+.box .btn{margin-top:1.5rem}
+
+/* ---------- status ---------- */
+.status{list-style:none;margin:2.6rem 0 0;padding:0;border-top:1px solid var(--line-soft)}
+.status>li{display:grid;grid-template-columns:minmax(0,14rem) 10rem minmax(0,1fr);
+  grid-template-areas:"subj chip note";gap:.5rem 2.2rem;align-items:baseline;
+  padding:1.45rem .75rem;border-bottom:1px solid var(--line-soft);
+  transition:background .3s var(--ease),padding-left .3s var(--ease)}
+.status>li:hover{background:rgba(227,169,75,.05);padding-left:1.4rem}
+.st-subj{grid-area:subj;font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--shola)}
+.st-chip{grid-area:chip;justify-self:start}
+.st-note{grid-area:note;color:var(--fg)}
+.chip{display:inline-block;font-size:.645rem;font-weight:500;letter-spacing:.155em;text-transform:uppercase;
+  color:var(--pradip);border:1px solid var(--line);padding:.3rem .62rem;border-radius:2px;white-space:nowrap}
+.chip.off{color:var(--dhusar);border-color:var(--line-soft)}
+
+/* ---------- contact ---------- */
+.mail{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--pradip);
+  text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:.15rem;
+  display:inline-block;margin-top:1rem;word-break:break-word;transition:color .25s,border-color .25s}
+.mail:hover{color:var(--shola);border-color:var(--shola)}
+
+/* ---------- footer ---------- */
+.site-foot{border-top:1px solid var(--line-soft);padding:2.6rem 0 3.4rem}
+.foot-in{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center;
+  max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);font-size:.83rem;color:var(--dhusar)}
+.foot-links{display:flex;flex-wrap:wrap;gap:1.6rem}
+.foot-links a{color:var(--dhusar);text-decoration:none;transition:color .25s}
+.foot-links a:hover{color:var(--shola)}
+
+/* ---------- motion ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.stag{opacity:0;animation:rise .95s var(--ease) forwards}
+.s1{animation-delay:.05s}.s2{animation-delay:.23s}.s3{animation-delay:.41s}.s4{animation-delay:.59s}
+.rv{opacity:0;transform:translateY(20px);
+  transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .split,.panel{grid-template-columns:minmax(0,1fr);gap:1.8rem}
+  .cols3{grid-template-columns:minmax(0,1fr);gap:2rem}
+  h2{max-width:none}
+}
+@media (max-width:720px){
+  .cols2{grid-template-columns:minmax(0,1fr)}
+  .dl>div,.dl.terms>div,.dl.tight>div{grid-template-columns:minmax(0,1fr);gap:.5rem}
+  .dl dt{padding-top:0}
+  .steps>li{grid-template-columns:minmax(0,1fr);gap:.9rem}
+  .status>li{grid-template-columns:minmax(0,1fr);grid-template-areas:"chip" "subj" "note";gap:.6rem}
+  .stage-note{padding-left:1.15rem}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .stag{opacity:1;animation:none}
+  .rv{opacity:1;transform:none;transition:none}
+  .dl>div,.steps>li,.status>li{transition:none}
+}
+</style>
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<div class="dawn" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="head-in">
+    <a class="mark" href="#top">SUNATYAM<span>&middot;</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#kosha">Kosha</a>
+      <a href="#route">The route</a>
+      <a href="#terms">Your terms</a>
+      <a href="#status">Where we are</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow stag s1">Sunatyam Studios &middot; dance-drama for the screen &middot; India</p>
+    <h1 class="stag s2">A fifth Veda,<br>made to be <span class="gold">watched.</span></h1>
+    <p class="lede stag s3">The four were closed to most people. So the story goes that Brahma made a fifth out of all of them &mdash; one anyone could see and hear. That is still the brief. We are building a studio for dance-drama from India's epics, and building it so that almost anyone can help.</p>
+    <div class="stag s4">
+      <div class="stage-note">
+        <strong>Sunatyam is early.</strong> Nothing below is a catalogue of things you can buy today. It is what we are building and the terms we intend to build it on. We would rather publish that now and be held to it than announce it once it is safely finished.
+      </div>
+      <div class="cta">
+        <a class="btn btn-solid" href="#kosha">See what we're building</a>
+        <a class="btn btn-ghost" href="#contact">Tell us what you'd need</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. INTENT ============ -->
+<section id="intent">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">What this is for</p>
+    <div class="split">
+      <h2>Drama is supposed to do something to you.</h2>
+      <div class="prose">
+        <p>The Natyashastra is unusually specific about what performance is for. Not to depict an emotion but to produce one &mdash; <span class="dev" lang="sa">रस</span>, rasa &mdash; and to do it by loosening, for a while, the grip of your own circumstances. The texts have a word for that moment: <span class="dev" lang="sa">साधारणीकरण</span>, sadharanikarana, when a room full of strangers stops being individuals with private worries and feels one thing together.</p>
+        <p>We are not promising you that. We are telling you what we aim at. Every choice &mdash; what we adapt, who we cast, how long we rehearse &mdash; gets measured against one question: <strong>does the finished thing leave a room lighter than it found it?</strong></p>
+      </div>
+    </div>
+    <p class="kicker mt">Everything below exists so that more people get to attempt that, not fewer.</p>
+  </div>
+</section>
+
+<!-- ============ 3. KOSHA ============ -->
+<section id="kosha">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">The library we're building &middot; <span class="dev" lang="sa">कोष</span> Kosha</p>
+    <div class="split">
+      <div>
+        <h2>A drama you can perform to.</h2>
+        <p class="kicker mt-s">Original, cleared, and yours to use.</p>
+      </div>
+      <div class="prose">
+        <p>Yakshagana, Kathakali and Bhaona all separate the voice from the body. One person tells it, another performs it. Half the mythological work ever made for a screen runs the same way, on a track laid down before anyone stepped in front of a camera.</p>
+        <p>Kosha is built on that. Not a folder of assets, but finished drama in audio &mdash; dialogue, narration, song and score, timed and ready &mdash; so a group can rehearse to it and perform to it. <strong>Which means you do not have to sing, or speak Sanskrit, or like the sound of your own voice, to take a lead role.</strong></p>
+        <p>Most productions of these stories currently run on material they have no right to use &mdash; a film score under a Ramlila, a devotional track behind a recital, a recitation lifted off a broadcast. It works until it doesn't, and the takedown tends to land after the work is finished. Everything in Kosha is commissioned and cleared once, so it can be used again without anyone looking over their shoulder. It fills as we make our own work. Here is what we intend it to hold.</p>
+      </div>
+    </div>
+
+    <dl class="dl mt">
+      <div><dt>Playback</dt><dd>The finished track a production runs on &mdash; dialogue, narration, song and score in one piece, timed so performers can lip-sync to it.</dd></div>
+      <div><dt>Stems</dt><dd>The same track, separated. Swap the language, re-voice it with your own singers, or cut it to the length you actually have.</dd></div>
+      <div><dt>Script and cues</dt><dd>The text being mouthed, with transliteration, translation and timings &mdash; so a performer knows what they are saying, not just when to open their mouth.</dd></div>
+      <div><dt>Staging reference</dt><dd>A plain recording of the sequence so you can see what happens when. No notation to read.</dd></div>
+      <div><dt>Design</dt><dd>Mask designs, makeup charts, costume patterns, ornament and prop references.</dd></div>
+    </dl>
+
+    <p class="prose-wide mt">Because the voice sits apart from the body, the same drama can be staged in Hindi in one town and Bengali in the next, with the same blocking and the same track underneath it. That is the plan, at least &mdash; Sanskrit, Hindi, Bengali and English first, and more as the people who speak them join.</p>
+
+    <p class="prose-wide mt"><strong>How we intend to open it.</strong> The exact terms are still being drafted, but three principles are settled.</p>
+
+    <div class="cols3 mt-s">
+      <div>
+        <h3>Students shouldn't pay</h3>
+        <p>Classroom, recital and non-commercial use should stay free, with credit. That is the part we are least willing to compromise on.</p>
+      </div>
+      <div>
+        <h3>One licence, not a maze</h3>
+        <p>Committees, troupes and schools should be able to cover a season in a single arrangement rather than clearing item by item.</p>
+      </div>
+      <div>
+        <h3>Commercial use funds it</h3>
+        <p>Broadcast, brand and ticketed work pays, and that is what keeps the rest of it open.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. THE ROUTE ============ -->
+<section id="route">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">The route we're designing</p>
+    <div class="split">
+      <h2>A way to make your own, properly.</h2>
+      <div class="prose">
+        <p>Most people who want to stage these stories stop at the same three walls: they were never taught, they cannot afford music, and they have no idea what the paperwork should say. We are designing a route around all three. It will take a while to build, and this is the shape of it.</p>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <div><span class="beat" aria-hidden="true">&times;</span><span class="sam" aria-hidden="true">SAM</span></div>
+        <div><h3>Learn</h3><p>Workshops and recorded sessions &mdash; movement, abhinaya, recitation, staging for a camera. Taught by people who do this for a living, not by us reading a book at you.</p></div>
+      </li>
+      <li>
+        <div><span class="beat" aria-hidden="true">2</span></div>
+        <div><h3>Draw</h3><p>Take a track from Kosha under one plain arrangement &mdash; the drama already recorded, ready to rehearse and perform to. No rights to chase, nothing to guess at.</p></div>
+      </li>
+      <li>
+        <div><span class="beat" aria-hidden="true">3</span></div>
+        <div><h3>Make</h3><p>The working method we are assembling as we make our own productions: rehearsal approach, planning documents, consent and release forms, and how we handle working with children.</p></div>
+      </li>
+      <li>
+        <div><span class="beat" aria-hidden="true">4</span></div>
+        <div><h3>Publish</h3><p>Release it where you choose. What matters to us is that the title is clean, so nothing you made can be pulled out from under you later.</p></div>
+      </li>
+      <li>
+        <div><span class="beat" aria-hidden="true">5</span></div>
+        <div><h3>Keep</h3><p>Credit should accrue to the person who earned it rather than evaporating into a channel. We are designing for that from the start.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 5. RIGHTS, CREDIT, PAYMENT ============ -->
+<section id="rights">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">Rights, credit, payment</p>
+    <div class="split">
+      <h2>Sign once. Get credited, get paid, keep the proof.</h2>
+      <div class="prose">
+        <p>The reason people get exploited in this work is rarely malice. It is that nobody wrote anything down. So the paperwork is something we are treating as part of the craft rather than an afterthought &mdash; and these are the standards we are writing toward.</p>
+      </div>
+    </div>
+
+    <dl class="dl terms mt">
+      <div><dt>One agreement, in your language</dt><dd>Plain language, alongside the language you actually work in. Rights, credit, payment and visibility settled in one document rather than four, and short enough to read.</dd></div>
+      <div><dt>Clean in both directions</dt><dd>A production needs the rights to exist. In exchange you should know exactly what is being made, where it can be shown, and for how long &mdash; with no quiet re-use in something you never agreed to.</dd></div>
+      <div><dt>Credit as a record, not a text file</dt><dd>Contributors named properly and kept in a form that can be carried forward, which is what makes the next line possible at all.</dd></div>
+      <div><dt>Work that accrues to you</dt><dd>The aim is that credits collect somewhere that belongs to you: roles, scenes, stills, one link to send a school, a producer, or a family that doesn't quite believe you did this.</dd></div>
+      <div><dt>Money agreed up front</dt><dd>Rate and schedule settled in writing before the work happens, whatever the size of the part. We do not intend to offer exposure instead of payment.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 6. YOUR TERMS ============ -->
+<section id="terms">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">How you appear</p>
+    <div class="split">
+      <h2>Show your work, not your face.</h2>
+      <div class="prose">
+        <p>Plenty of people want to perform and cannot be recognisable doing it &mdash; because of a job, a family, a community, or simply their own preference. The traditions solved this a long time ago. A Chhau mask or a full Kathakali face is not a compromise; it is one of the oldest and most powerful ways to appear at all.</p>
+        <p>So visibility is something we intend to make a choice rather than a condition of entry. Three levels, decided before you are cast and written down.</p>
+      </div>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Visibility levels">
+      <button class="tab" role="tab" id="tab-open" aria-controls="panel-open" aria-selected="true" type="button">Open</button>
+      <button class="tab" role="tab" id="tab-mask" aria-controls="panel-mask" aria-selected="false" tabindex="-1" type="button">Behind a mask</button>
+      <button class="tab" role="tab" id="tab-unseen" aria-controls="panel-unseen" aria-selected="false" tabindex="-1" type="button">Unseen</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-open" aria-labelledby="tab-open" tabindex="0">
+      <div>
+        <h3>Your face, your name, in the credits.</h3>
+        <p>The usual thing. You appear as yourself, credited under your own name, and you keep material from your scenes for your own portfolio.</p>
+      </div>
+      <dl class="dl tight">
+        <div><dt>Seen</dt><dd>Face, full performance</dd></div>
+        <div><dt>Credit</dt><dd>Your legal or stage name</dd></div>
+        <div><dt>You keep</dt><dd>Stills and your scenes</dd></div>
+        <div><dt>Suits</dt><dd>Performers building a reel</dd></div>
+      </dl>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-mask" aria-labelledby="tab-mask" tabindex="0" hidden>
+      <div>
+        <h3>The form does the hiding for you.</h3>
+        <p>You perform in a mask or a full traditional makeup design. Nobody watching can identify you, and nothing about the performance is diminished &mdash; these are the choices the tradition made for its most powerful roles.</p>
+      </div>
+      <dl class="dl tight">
+        <div><dt>Seen</dt><dd>Mask or full makeup only</dd></div>
+        <div><dt>Credit</dt><dd>Any name you choose, or none</dd></div>
+        <div><dt>You keep</dt><dd>A private copy</dd></div>
+        <div><dt>Suits</dt><dd>Anyone who can't be recognisable</dd></div>
+      </dl>
+    </div>
+
+    <div class="panel" role="tabpanel" id="panel-unseen" aria-labelledby="tab-unseen" tabindex="0" hidden>
+      <div>
+        <h3>Contribute without being on camera at all.</h3>
+        <p>Voice, recitation, song, percussion, choreography, translation, writing, costume, or work behind the camera. A production needs far more of this than it needs faces.</p>
+      </div>
+      <dl class="dl tight">
+        <div><dt>Seen</dt><dd>Nothing</dd></div>
+        <div><dt>Credit</dt><dd>Named, or anonymous by request</dd></div>
+        <div><dt>You keep</dt><dd>What you made</dd></div>
+        <div><dt>Suits</dt><dd>Musicians, writers, crew, quiet people</dd></div>
+      </dl>
+    </div>
+
+    <dl class="dl terms mt">
+      <div><dt>Written before filmed</dt><dd>The agreement comes first and the camera second. That order is not something we intend to bend for convenience.</dd></div>
+      <div><dt>Reach is yours to set</dt><dd>Where something can be shown should be decided per production, not assumed once and reused forever.</dd></div>
+      <div><dt>Consent should be revocable</dt><dd>A signature on one day should not bind you indefinitely. That is the standard we are writing toward, and we will say plainly what it covers once it is settled.</dd></div>
+      <div><dt>Minors handled separately</dt><dd>Guardian consent, restricted hours, a chaperone present, and a higher default privacy level than an adult would get.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 7. WHO THIS IS FOR ============ -->
+<section id="who">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">Who this is for</p>
+    <div class="split">
+      <h2>You do not have to be a performer to perform.</h2>
+      <div class="prose">
+        <p>Some of the strongest work in this tradition comes from people who do something else all week. Teachers, doctors, engineers, homemakers, students. What they lack in training they tend to make up for in the one thing that cannot be taught: they mean it.</p>
+        <p>So we would rather run this as a ladder than a casting call &mdash; a workshop before an audition, weeks of rehearsal rather than hours, and something at the end that is yours to show.</p>
+      </div>
+    </div>
+
+    <div class="cols2 mt">
+      <div class="box">
+        <h3>If you already train</h3>
+        <p>Dancers, singers, percussionists, reciters, makeup and mask artists, camera and edit. We are not casting yet, but we are keen to know who is out there. Send a couple of links.</p>
+        <a class="btn btn-ghost" href="mailto:hello@sunatyam.com?subject=Introduction">Introduce yourself</a>
+      </div>
+      <div class="box">
+        <h3>If you have never done this</h3>
+        <p>Workshops are the way in, and we are working out the format now. Tell us what you would want from one and it will shape how we build it.</p>
+        <a class="btn btn-ghost" href="mailto:hello@sunatyam.com?subject=Workshops">Tell us what you'd want</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. HOUSE RULES ============ -->
+<section id="rules">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">Not up for negotiation</p>
+    <div class="split">
+      <h2>House rules, and what we refuse to be.</h2>
+      <div class="prose">
+        <p>Much of this page describes things still being built. This part does not. These cost nothing to honour, so they apply from the first day of the first production.</p>
+      </div>
+    </div>
+
+    <dl class="dl terms mt">
+      <div><dt>Everyone is credited</dt><dd>On screen, by name, including the people who made the masks and cooked the food. Nobody's work disappears into &ldquo;and team&rdquo;.</dd></div>
+      <div><dt>Everyone is paid</dt><dd>Agreed before the shoot, in writing, whatever the size of the part.</dd></div>
+      <div><dt>Traditions are named</dt><dd>When we borrow a step, a mask or a musical form, we say where it came from and who taught it to us.</dd></div>
+      <div><dt>Criticise the take, never the person</dt><dd>Notes are about the work, not the body, the caste, the accent or the age of the person in it. This applies to the director first.</dd></div>
+      <div><dt>Not a competition</dt><dd>No rankings, no eliminations, nobody edited to look foolish for a thumbnail. Beginners are the point, not the comic relief.</dd></div>
+      <div><dt>Not a sermon</dt><dd>We make work rooted in scripture and history, and we make it as drama. Devotion is welcome in the room; it is not a requirement to be in it.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 9. WHERE WE ACTUALLY ARE ============ -->
+<section id="status">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">Honestly</p>
+    <div class="split">
+      <h2>Where we actually are.</h2>
+      <div class="prose">
+        <p>Anyone can write intentions. This is the part that is harder to fake, so we would rather keep it on the page and update it than leave you guessing.</p>
+      </div>
+    </div>
+
+    <!-- KEEP THIS CURRENT — stale statuses make this the least honest section on the page -->
+    <ul class="status">
+      <li>
+        <span class="st-subj">First production</span>
+        <span class="st-chip"><span class="chip">In progress</span></span>
+        <span class="st-note">Being made now. We will show it when it is worth showing, and not before.</span>
+      </li>
+      <li>
+        <span class="st-subj">Kosha</span>
+        <span class="st-chip"><span class="chip">Being built</span></span>
+        <span class="st-note">Filling as we shoot. Not open for licensing yet &mdash; the terms are still being drafted with counsel.</span>
+      </li>
+      <li>
+        <span class="st-subj">Workshops</span>
+        <span class="st-chip"><span class="chip">Designing</span></span>
+        <span class="st-note">Format, length and where they run are all open questions. Input welcome.</span>
+      </li>
+      <li>
+        <span class="st-subj">Membership</span>
+        <span class="st-chip"><span class="chip off">Not open</span></span>
+        <span class="st-note">It will fund the productions when it exists. There is nothing to join today.</span>
+      </li>
+      <li>
+        <span class="st-subj">Commissions</span>
+        <span class="st-chip"><span class="chip">Open</span></span>
+        <span class="st-note">We work with production partners and are talking to people about work now.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 10. CONTACT ============ -->
+<section id="contact">
+  <div class="wrap rv">
+    <div class="rule" aria-hidden="true"></div>
+    <p class="eyebrow">Contact</p>
+    <div class="split">
+      <h2>At this stage, the most useful thing you can send is what you'd need.</h2>
+      <div class="prose">
+        <p>We are still deciding a great deal. A note describing what you would actually want out of this is worth more to us right now than an enquiry we cannot yet answer &mdash; and it is the fastest way to influence how any of it gets built.</p>
+      </div>
+    </div>
+
+    <div class="cols3 mt">
+      <div>
+        <h3>Commissions and partners</h3>
+        <p>Festivals, channels, brands, trusts and institutions, and production partners across India.</p>
+        <a class="mail" href="mailto:studio@sunatyam.com">studio@sunatyam.com</a>
+      </div>
+      <div>
+        <h3>Everyone else</h3>
+        <p>Performers, musicians, crew, teachers, committees, and anyone who would want to use Kosha one day.</p>
+        <a class="mail" href="mailto:hello@sunatyam.com">hello@sunatyam.com</a>
+      </div>
+      <div>
+        <h3>Hear when things open</h3>
+        <p>One occasional note when something actually opens. No newsletter, and we never share the list.</p>
+        <a class="mail" href="mailto:hello@sunatyam.com?subject=Keep%20me%20posted">hello@sunatyam.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!--
+  PRE-LAUNCH: /terms and /privacy must be written before this site goes live.
+  No company entity is named anywhere on this page, so those two pages are what
+  carry the site's legitimacy. They need the registered entity and a named contact.
+-->
+<footer class="site-foot">
+  <div class="foot-in">
+    <p style="margin:0">Sunatyam Studios &middot; India &middot; &copy; <span id="year">2026</span></p>
+    <nav class="foot-links" aria-label="Legal">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="mailto:hello@sunatyam.com">hello@sunatyam.com</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Sunatyam Studios",
+  "url": "https://sunatyam.com/",
+  "logo": "https://sunatyam.com/favicon.svg",
+  "description": "A studio in planning, building dance-drama from India's epics for the screen.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "general enquiries",
+    "email": "hello@sunatyam.com"
+  }
+}
+</script>
+
+<script>
+(function(){
+  'use strict';
+  var root = document.documentElement;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var y = document.getElementById('year');
+  if (y) { y.textContent = String(new Date().getFullYear()); }
+
+  /* --- the room lightens as you read it --- */
+  if (reduce) {
+    root.style.setProperty('--dawn', '.5');
+  } else {
+    var ticking = false;
+    function paint(){
+      ticking = false;
+      var span = document.documentElement.scrollHeight - window.innerHeight;
+      var p = span > 0 ? Math.min(1, Math.max(0, window.pageYOffset / span)) : 0;
+      root.style.setProperty('--dawn', (p * 0.88).toFixed(3));
+    }
+    function request(){ if (!ticking) { ticking = true; requestAnimationFrame(paint); } }
+    window.addEventListener('scroll', request, {passive:true});
+    window.addEventListener('resize', request, {passive:true});
+    paint();
+  }
+
+  /* --- reveal on scroll --- */
+  var rv = Array.prototype.slice.call(document.querySelectorAll('.rv'));
+  if (reduce || !('IntersectionObserver' in window)) {
+    rv.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin: '0px 0px -10% 0px', threshold: 0.06});
+    rv.forEach(function(el){ io.observe(el); });
+  }
+
+  /* --- visibility tabs --- */
+  var tablist = document.querySelector('[role="tablist"]');
+  if (tablist) {
+    var tabs = Array.prototype.slice.call(tablist.querySelectorAll('[role="tab"]'));
+    var select = function(i, moveFocus){
+      tabs.forEach(function(t, j){
+        var on = (j === i);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute('aria-controls'));
+        if (panel) { panel.hidden = !on; }
+      });
+      if (moveFocus) { tabs[i].focus(); }
+    };
+    tabs.forEach(function(t, i){
+      t.addEventListener('click', function(){ select(i, false); });
+      t.addEventListener('keydown', function(e){
+        var n = -1;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { n = (i + 1) % tabs.length; }
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { n = (i - 1 + tabs.length) % tabs.length; }
+        else if (e.key === 'Home') { n = 0; }
+        else if (e.key === 'End') { n = tabs.length - 1; }
+        if (n > -1) { e.preventDefault(); select(n, true); }
+      });
+    });
+    select(0, false);
+  }
+})();
+</script>
+</body>
+</html>
