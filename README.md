@@ -24,8 +24,12 @@ assets/brand/      studio logo assets; current layouts in logo-set/
 [Preview and download the logo set](https://sunatyam.com/assets/brand/logo-set/preview.html).
 The same page is available locally at `assets/brand/logo-set/preview.html`.
 
+The current emblem depicts a performer portraying Nataraja, with a front-facing
+featureless head, round topknot, medium-length flowing hair, refined front-hand
+posture, subtle torso contours and a continuous S.
+
 The current logo set lives in `assets/brand/logo-set/`. The homepage header and
-hero use `sunatyam-horizontal-dark.png`; its Nataraja S is the first letter of
+hero use `sunatyam-horizontal-dark.png`; its performer S is the first letter of
 SUNATYAM. The Uma footer uses `sunatyam-stacked-dark.png` and links home. Both
 pages have dark backgrounds, so these versions use gold and ivory. Organization
 metadata points to the stacked light-background logo.
@@ -41,7 +45,7 @@ dark versions on dark surfaces, or white/black for single-colour use. Put a soli
 contrasting panel behind the logo on busy imagery. These are raster PNG exports,
 not vector masters. Check fine details at the intended display size. The compact
 tala favicon is retained because the detailed dancer is unsuitable at 16 pixels.
-The older `sunatyam-studios-*.png` assets remain available for existing links.
+The older `sunatyam-studios-*.png` URLs now serve matching updated stacked logos for existing links.
 
 ---
 

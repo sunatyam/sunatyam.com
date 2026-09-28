@@ -1,8 +1,10 @@
 # Sunatyam Studios logo set
 
+Approved design: a performer portraying Nataraja, with a front-facing featureless head, rounded topknot, medium-length flowing hair, two front arms, refined blessing-hand posture and a continuous S. Updated 28 September 2026.
+
 ## Files
 
-- Horizontal: the Nataraja S is the first letter of SUNATYAM; STUDIOS sits below.
+- Horizontal: the performer S is the first letter of SUNATYAM; STUDIOS sits below.
 - Stacked: emblem above SUNATYAM and STUDIOS on separate lines.
 - Emblem: rounded S with two front-hand gestures, without text.
 - Avatar: gold emblem on solid navy with padding for circular profile crops.
@@ -26,3 +28,5 @@ Check at actual display size: the full dancer includes fine details and is not d
 These are raster PNG exports. The twelve logo variants include alpha transparency; the avatar has a solid background. They are not editable vector masters. Independently rendered variants can have minor contour and spacing differences; use a single vector master when exact matching or large-format production is required.
 
 
+
+The legacy `../sunatyam-studios-{colour,white,black}.png` URLs now serve the corresponding updated stacked marks. The navy avatar is the approved single-logo study.
