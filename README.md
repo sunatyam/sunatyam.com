@@ -16,18 +16,29 @@ sitemap.xml        one URL
 favicon.svg        the tala mark (sam stroke + beats)
 site.webmanifest   name, colours, icon
 og-image.png       PLACEHOLDER — see the checklist below
-assets/brand/      transparent Sunatyam Studios logos (colour, white, black)
+assets/brand/      studio logo assets; current layouts in logo-set/
 ```
 
 ## Studio logos
 
-The homepage hero and Uma footer use `assets/brand/sunatyam-studios-white.png`
-for contrast against their dark backgrounds. The Uma logo links to the homepage.
-Use the colour logo on light neutral backgrounds, or black for monochrome use.
-All three PNGs are 1254 × 1254 with transparent backgrounds; retain their square
-aspect ratio and clear space. Use a solid contrasting panel over busy imagery.
-The detailed full logo is unsuitable at favicon size, so the compact tala favicon
-is retained. The Organization metadata points to the colour studio logo.
+The current logo set lives in `assets/brand/logo-set/`. The homepage header and
+hero use `sunatyam-horizontal-dark.png`; its Nataraja S is the first letter of
+SUNATYAM. The Uma footer uses `sunatyam-stacked-dark.png` and links home. Both
+pages have dark backgrounds, so these versions use gold and ivory. Organization
+metadata points to the stacked light-background logo.
+
+Each of the horizontal, stacked and emblem-only layouts is available in light,
+dark, white and black variants. All twelve logo files have transparent backgrounds.
+The thirteenth file, `sunatyam-avatar-navy.png`, has a solid navy background and
+padding for circular social profile crops. Horizontal files are 2172 × 724 pixels;
+stacked, emblem and avatar files are 1254 × 1254 pixels.
+
+Preserve proportions and clear space. Use light versions on light neutral surfaces,
+dark versions on dark surfaces, or white/black for single-colour use. Put a solid
+contrasting panel behind the logo on busy imagery. These are raster PNG exports,
+not vector masters. Check fine details at the intended display size. The compact
+tala favicon is retained because the detailed dancer is unsuitable at 16 pixels.
+The older `sunatyam-studios-*.png` assets remain available for existing links.
 
 ---
 
