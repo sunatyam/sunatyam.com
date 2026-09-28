@@ -30,3 +30,7 @@ These are raster PNG exports. The twelve logo variants include alpha transparenc
 
 
 The legacy `../sunatyam-studios-{colour,white,black}.png` URLs now serve the corresponding updated stacked marks. The navy avatar is the approved single-logo study.
+
+## Social profiles
+
+Ready-to-upload stacked profile logos for Instagram, Facebook and YouTube are in `social-profiles/`. Open `social-profiles/preview.html` for circular previews and downloads.
