@@ -21,6 +21,9 @@ assets/brand/      studio logo assets; current layouts in logo-set/
 
 ## Studio logos
 
+[Preview and download the logo set](https://sunatyam.com/assets/brand/logo-set/preview.html).
+The same page is available locally at `assets/brand/logo-set/preview.html`.
+
 The current logo set lives in `assets/brand/logo-set/`. The homepage header and
 hero use `sunatyam-horizontal-dark.png`; its Nataraja S is the first letter of
 SUNATYAM. The Uma footer uses `sunatyam-stacked-dark.png` and links home. Both
