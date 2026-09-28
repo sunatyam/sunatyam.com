@@ -16,7 +16,18 @@ sitemap.xml        one URL
 favicon.svg        the tala mark (sam stroke + beats)
 site.webmanifest   name, colours, icon
 og-image.png       PLACEHOLDER — see the checklist below
+assets/brand/      transparent Sunatyam Studios logos (colour, white, black)
 ```
+
+## Studio logos
+
+The homepage hero and Uma footer use `assets/brand/sunatyam-studios-white.png`
+for contrast against their dark backgrounds. The Uma logo links to the homepage.
+Use the colour logo on light neutral backgrounds, or black for monochrome use.
+All three PNGs are 1254 × 1254 with transparent backgrounds; retain their square
+aspect ratio and clear space. Use a solid contrasting panel over busy imagery.
+The detailed full logo is unsuitable at favicon size, so the compact tala favicon
+is retained. The Organization metadata points to the colour studio logo.
 
 ---
 

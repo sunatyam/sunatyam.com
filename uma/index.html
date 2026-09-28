@@ -168,7 +168,9 @@ a{color:inherit}
 
 /* ---------- footer ---------- */
 footer{text-align:center;margin-top:34px}
-footer .mark{font-family:var(--lat);font-weight:700;font-size:13px;letter-spacing:.3em;color:var(--gold)}
+footer .mark{display:inline-block}
+footer .mark img{display:block;width:180px;height:auto}
+footer .mark:focus-visible{outline:2px solid var(--gold);outline-offset:8px}
 footer .h{font-size:12.5px;color:var(--muted);margin-top:8px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -281,7 +283,7 @@ footer .h{font-size:12.5px;color:var(--muted);margin-top:8px}
   </section>
 
   <footer>
-    <div class="mark">SUNATYAM STUDIOS</div>
+    <a class="mark" href="../"><img src="../assets/brand/sunatyam-studios-white.png" width="1254" height="1254" loading="lazy" alt="Sunatyam Studios — home"></a>
     <p class="h">সুনাট্যম · @sunatyam on YouTube and Instagram · facebook.com/sunatyamstudios</p>
   </footer>
 </div>
